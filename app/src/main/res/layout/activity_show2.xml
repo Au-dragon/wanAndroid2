@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Show2Activity"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/myToolBar"
+        android:background="@drawable/blue_gradient_bg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/zuojiantou"
+                android:layout_centerVertical="true"
+                android:id="@+id/img"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="dasdasdasdasdasdasdasd"
+                android:layout_toRightOf="@id/img"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myWebView"/>
+
+
+</LinearLayout>

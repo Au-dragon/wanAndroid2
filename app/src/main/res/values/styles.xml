@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#339999</item>
+        <item name="colorPrimaryDark">#0099ff</item>
+        <item name="colorAccent">#00ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- 设置Menu菜单的背景色 -->
+
+        <item name="colorControlNormal">@color/white</item><!-- 主要是这个起作用,修改默认返回键的颜色-->
+        <!-- 设置Menu窗口不覆盖Toolbar视图 -->
+        <item name="overlapAnchor">false</item>
+    </style>
+    <style name="AppTheme.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_54</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!-- Base application theme. -->
+    <style name="NewTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#0099ff</item>
+        <item name="colorAccent">#00ffffff</item>
+    </style>
+
+    <style name="AppATheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="AppATheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppATheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

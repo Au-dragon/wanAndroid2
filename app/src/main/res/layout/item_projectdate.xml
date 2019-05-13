@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardCornerRadius="3dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/img"/>
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_author"
+                android:layout_margin="10dp"
+                android:id="@+id/img2"/>
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img2"
+                android:text="大大撒大苏打撒旦dasdasdasdasdasdasdasdasdasd"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/t2"
+                android:text="adasdasdasdasdsafdsgfgdfgdfg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t3"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t4"
+                android:text="ddad"
+                android:layout_toRightOf="@id/t3"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

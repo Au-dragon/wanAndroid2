@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".activity.ZhiShiActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/blue_gradient_bg"
+    android:id="@+id/myToolBar"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/zuojiantou"
+        android:id="@+id/img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:text="111"
+        android:layout_gravity="center"
+        android:textColor="@color/color_ffffff"/>
+</android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:background="@color/color_0099ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/color_ffffff"
+        android:id="@+id/myTab"
+        app:tabMode="scrollable"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myVp"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/heisezuojintou"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25" />
+        <EditText
+            android:layout_marginLeft="@dimen/dp_8"
+            android:hint="搜索更多干货"
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="搜索"
+            android:background="@drawable/search_button"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="@dimen/dp_10"
+        android:text="热搜"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/flay"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="搜索历史"
+            android:textSize="@dimen/dp_18"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/lajitong"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25" />
+            <TextView
+                android:text="清空"
+                android:textSize="@dimen/dp_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
